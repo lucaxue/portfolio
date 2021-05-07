@@ -2,17 +2,17 @@ import React from 'react';
 import Head from 'next/head';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
+  description: 'My portfolio',
+  title: 'Luca Xue',
   url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  author: 'Luca Xue',
+  keywords: ['luca', 'xue', 'portfolio'],
   img: '',
-  twitterId: '@ajayns_',
+  twitterId: '',
   facebookId: '',
 };
 
-const SEO = () => (
+const SEO: React.FC = () => (
   <Head>
     <meta property="fb:app_id" content={SEO_DATA.facebookId} />
     <meta property="og:title" content={SEO_DATA.title} />

@@ -2,20 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 
-import { Container } from 'components/global';
-import ExternalLink from 'components/common/ExternalLink';
+import { Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
 const Hero: React.FC = () => (
   <HeroWrapper>
     <Container>
       <Grid>
         <Art>
-          <Image src="/images/art/build.png" height="500" width="500" />
+          <Image
+            src="/images/art/lightbulb_man.png"
+            height="100%"
+            width="100%"
+            layout="responsive"
+          />
         </Art>
         <Text>
-          <h1>Hi, I'm Luca Xue.</h1>
+          <h1>Hi, I'm Luca.</h1>
           <br />
-          <h2>I creatively build software solutions.</h2>
+          <h2>I turn ideas into solutions.</h2>
           <br />
           <p>
             <StyledExternalLink href="https://github.com/lucaxue">
@@ -55,7 +60,8 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 64px;
+  grid-gap: 100px;
+  /* grid-gap: 64px; */
 
   @media (max-width: ${(props) => props.theme.screen.md}) {
     grid-template-columns: 1fr;

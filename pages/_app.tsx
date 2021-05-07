@@ -7,7 +7,7 @@ import SEO from 'components/common/SEO';
 import theme from '@styles/theme';
 import GlobalStyles from '@styles/GlobalStyles';
 
-const App: React.FC<AppProps> = ({ Component, pageProps }) => (
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => (
   <ThemeProvider theme={theme}>
     <>
       <SEO />
@@ -17,4 +17,4 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => (
   </ThemeProvider>
 );
 
-export default App;
+export default MyApp;
