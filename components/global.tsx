@@ -29,7 +29,7 @@ export const Container = styled.div<{ fluid?: boolean }>`
   `};
 `;
 
-export const Section = styled.section<{ accent?: 'primary' | 'secondary' }>`
+export const Section = styled.section<{ accent?: boolean | 'secondary' }>`
   padding: 128px 0;
   overflow: hidden;
 

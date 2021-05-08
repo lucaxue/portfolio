@@ -19,10 +19,8 @@ const About: React.FC = () => {
               <br />
               <br />
               Some technologies I have been recently working with include
-              <br />
-              TypeScript, React, Next, Jest,
-              <br />
-              C#, ASP.NET Core, xUnit and PostgreSQL.
+              TypeScript, React, Next,
+              C#, ASP.NET Core and PostgreSQL.
             </p>
           </div>
           <Art>
