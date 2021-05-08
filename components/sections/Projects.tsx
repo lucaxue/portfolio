@@ -4,17 +4,37 @@ import Image from 'next/image';
 
 import { Section, Container } from '@components/global';
 
+const PROJECTS = [
+  {
+    name: 'Boost',
+    description: 'An exercise focused event making app',
+    link: 'https://boostapp.netlify.app',
+    github: 'https://github.com/lucaxue/boost-app-front-end',
+  },
+];
+
 const Projects: React.FC = () => (
   <Section id="projects" accent>
     <Container style={{ position: 'relative' }}>
-      <h1>My Projects</h1>
-      <p>
-        Some words again and again Some words again and again Some words again
-        and again Some words again and again Some words again and again Some
-        words again and again Some words again and again Some words again and
-        again Some words again and again Some words again and again Some words
-        again and again Some words again and again
-      </p>
+      <Grid>
+        <h1>My Projects</h1>
+        <p>
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+        </p>
+      </Grid>
       <Art>
         <Image
           src="/images/art/build.png"
@@ -29,6 +49,10 @@ const Projects: React.FC = () => (
     </Container>
   </Section>
 );
+
+const Grid = styled.div`
+  display: grid;
+`;
 
 const Art = styled.figure`
   width: 800px;
