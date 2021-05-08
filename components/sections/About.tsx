@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 import { Section, Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
 const About: React.FC = () => {
   return (
@@ -11,7 +12,18 @@ const About: React.FC = () => {
         <Grid>
           <div>
             <h2>About me</h2>
-            <p>Some stuff about me.</p>
+            <p>
+              Hello, I'm Luca, a keen learner who loves all things tech. <br />
+              I have recently graduated from the School of Code and I am now
+              starting my journey as a Software Engineer at Suru Partners.
+              <br />
+              <br />
+              Some technologies I have been recently working with include
+              <br />
+              TypeScript, React, Next, Jest,
+              <br />
+              C#, ASP.NET Core, xUnit and PostgreSQL.
+            </p>
           </div>
           <Art>
             <Image
@@ -25,15 +37,23 @@ const About: React.FC = () => {
         <Grid inverse>
           <Art>
             <Image
-              src="/images/art/fast.png"
+              src="/images/art/learn_yourself.png"
               width="100%"
               height="100%"
               layout="responsive"
             />
           </Art>
           <div>
-            <h2>About me</h2>
-            <p>Some more stuff about me.</p>
+            <h2>Learning never stops</h2>
+            <p>
+              From the bootcamp, I have learned some amazing things including
+              some cool technologies, good software practices, love of problem
+              solving, clear communication skills, ability to work in an agile
+              team and user centered development. <br />
+              <br />
+              However, the most valuable skill I've developed is learning how to
+              learn. This feeds my passion for continuous learning and tech.
+            </p>
           </div>
         </Grid>
       </Container>
@@ -59,6 +79,11 @@ const Grid = styled.div<{ inverse?: boolean }>`
 
   h2 {
     margin-bottom: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 
   @media (max-width: ${(props) => props.theme.screen.md}) {

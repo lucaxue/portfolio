@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from 'next/image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
