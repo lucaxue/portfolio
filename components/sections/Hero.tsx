@@ -10,17 +10,22 @@ const Hero: React.FC = () => (
     <Container>
       <Grid>
         <Art>
-          <Image
-            src="/images/art/lightbulb_man.png"
-            height="100%"
-            width="100%"
-            layout="responsive"
-          />
+          <div>
+            <Image
+              src="/images/art/lightbulb_man.png"
+              height="100%"
+              width="100%"
+              layout="responsive"
+            />
+          </div>
         </Art>
         <Text>
           <h1>Hi, I'm Luca.</h1>
           <br />
-          <h2>I turn ideas into solutions.</h2>
+          <h2>
+            I turn ideas <br />
+            into solutions.
+          </h2>
           <br />
           <p>
             <StyledExternalLink href="https://github.com/lucaxue">
@@ -48,7 +53,7 @@ const Art = styled.figure`
 
   > div {
     width: 120%;
-    margin-bottom: -4.5%;
+    margin-bottom: -5%;
 
     @media (max-width: ${(props) => props.theme.screen.md}) {
       width: 100%;
