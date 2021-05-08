@@ -15,7 +15,7 @@ const About: React.FC = () => {
             <p>
               Hello, I'm Luca, a keen learner who loves all things tech. <br />
               I have recently graduated from the School of Code and I am now
-              starting my journey as a Software Engineer at Suru Partners.
+              starting my journey as a Software Developer at Suru Partners.
               <br />
               <br />
               Some technologies I have been recently working with include
