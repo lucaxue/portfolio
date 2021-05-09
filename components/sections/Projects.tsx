@@ -33,6 +33,20 @@ const Projects: React.FC = () => (
           <br />
           Some words again and again Some words again and again
           <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
+          Some words again and again Some words again and again
+          <br />
         </p>
       </Grid>
       <Art>
