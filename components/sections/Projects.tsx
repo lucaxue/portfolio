@@ -44,7 +44,12 @@ const Projects: React.FC = () => (
         />
       </Art>
       <ArtMobile>
-        <Image src="/images/art/build.png" height="100%" width="100%" />
+        <Image
+          src="/images/art/build.png"
+          height="100%"
+          width="100%"
+          layout="responsive"
+        />
       </ArtMobile>
     </Container>
   </Section>
