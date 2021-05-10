@@ -13,26 +13,27 @@ const About: React.FC = () => {
           <div>
             <h2>About me</h2>
             <p>
-              Hello, I'm Luca, a keen learner who loves all things tech. <br />
-              I have recently graduated from the School of Code and I am now
-              starting my journey as a Software Developer at Suru Partners.
+              Hello, I'm <strong>Luca</strong>, a keen learner who loves all
+              things tech. <br />I have recently graduated from the{' '}
+              <strong>School of Code</strong> and I am now starting my journey
+              as a <strong>Software Developer</strong> at{' '}
+              <strong>Suru Partners</strong>.
               <br />
               <br />
               Some technologies I have been recently working with include
-              TypeScript, React, Next,
-              C#, ASP.NET Core and PostgreSQL.
+              TypeScript, React, Next, C#, ASP.NET Core and PostgreSQL.
             </p>
           </div>
           <Art>
             <Image
-              src="/images/art/fast.png"
-              width="100%"
-              height="100%"
+              src="/images/my_headshot.png"
+              width="200px"
+              height="200px"
               layout="responsive"
             />
           </Art>
         </Grid>
-        <Grid inverse>
+        {/* <Grid inverse>
           <Art>
             <Image
               src="/images/art/learn_yourself.png"
@@ -53,7 +54,7 @@ const About: React.FC = () => {
               learn. This feeds my passion for continuous learning and tech.
             </p>
           </div>
-        </Grid>
+        </Grid> */}
       </Container>
     </Section>
   );
@@ -62,11 +63,10 @@ const About: React.FC = () => {
 const Grid = styled.div<{ inverse?: boolean }>`
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-gap: 40px;
-  text-align: right;
+  text-align: left;
   align-items: center;
   justify-items: center;
-  margin: 24px 0;
+  margin: 105px;
 
   ${(props) =>
     props.inverse &&
@@ -87,7 +87,10 @@ const Grid = styled.div<{ inverse?: boolean }>`
   @media (max-width: ${(props) => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     text-align: left;
-    margin-bottom: 96px;
+    margin-bottom: 76px;
+
+    grid-gap: 64px;
+    margin: 50px 0px;
 
     &:last-child {
       margin-bottom: 24px;
@@ -105,7 +108,7 @@ const Grid = styled.div<{ inverse?: boolean }>`
 
 const Art = styled.figure`
   margin: 0;
-  max-width: 380px;
+  max-width: 200px;
   width: 100%;
 `;
 
