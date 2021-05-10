@@ -7,7 +7,7 @@ import ExternalLink from '@common/ExternalLink';
 
 const About: React.FC = () => {
   return (
-    <Section id="about">
+    <Section id="about" style={{ paddingBottom: '0' }}>
       <Container>
         <Grid>
           <div>
@@ -24,7 +24,7 @@ const About: React.FC = () => {
               TypeScript, React, Next, C#, ASP.NET Core and PostgreSQL.
             </p>
           </div>
-          <Art>
+          <Art headshot>
             <Image
               src="/images/my_headshot.png"
               width="200px"
@@ -67,10 +67,12 @@ const Grid = styled.div<{ inverse?: boolean }>`
   align-items: center;
   justify-items: center;
   margin: 105px;
+  margin-bottom: 0;
 
   ${(props) =>
     props.inverse &&
     `
+    grid-gap: 100px;
     text-align: left;
     grid-template-columns: 2fr 3fr;
   `}
@@ -106,9 +108,9 @@ const Grid = styled.div<{ inverse?: boolean }>`
   }
 `;
 
-const Art = styled.figure`
+const Art = styled.figure<{ headshot?: boolean }>`
   margin: 0;
-  max-width: 200px;
+  max-width: ${(props) => (props.headshot ? '200px' : '380px')};
   width: 100%;
 `;
 

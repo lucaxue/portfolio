@@ -6,7 +6,7 @@ import Scrollspy from 'react-scrollspy';
 import { Container } from '@components/global';
 import MenuIcon from '@public/icons/menu.svg';
 
-const NAV_ITEMS = ['About', 'Projects'];
+const NAV_ITEMS = ['About', 'Skills', 'Projects'];
 
 const NavBar: React.FC = ({ ...props }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,7 +28,7 @@ const NavBar: React.FC = ({ ...props }) => {
     <NavListWrapper mobile={mobile}>
       <Scrollspy
         items={NAV_ITEMS.map((item) => item.toLowerCase())}
-        currentClassNAme="active"
+        currentClassName="active"
         mobile={mobile}
         offset={-64}
       >

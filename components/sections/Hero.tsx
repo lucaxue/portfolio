@@ -52,7 +52,7 @@ const Art = styled.figure`
   margin: 0;
 
   > div {
-    width: 150%;
+    width: 130%;
     margin-bottom: -5%;
 
     @media (max-width: ${(props) => props.theme.screen.md}) {
@@ -65,11 +65,13 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 250px;
-  
+  grid-gap: 200px;
+  margin-left: -50px;
+
   @media (max-width: ${(props) => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     grid-gap: 80px;
+    margin-left: 0;
 
     > ${Art} {
       order: 2;
