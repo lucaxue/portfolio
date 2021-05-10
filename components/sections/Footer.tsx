@@ -29,10 +29,10 @@ const Footer: React.FC = () => (
       <Copyright>
         <h2>Luca Xue</h2>
         <span>
-          Illustrations by
+          Illustrations from
           {` `}
           <ExternalLink href="https://absurd.design/">
-            Absurd Design
+            absurd.design
           </ExternalLink>
         </span>
       </Copyright>
@@ -74,6 +74,10 @@ const Copyright = styled.div`
   a {
     text-decoration: none;
     color: inherit;
+    transition: 0.2s;
+    &:hover {
+      font-weight: 600;
+    }
   }
 `;
 

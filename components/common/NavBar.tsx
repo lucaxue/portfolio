@@ -113,6 +113,7 @@ const NavItem = styled.li`
   &.active {
     a {
       opacity: 1;
+      font-weight: 500;
     }
   }
 `;

@@ -7,7 +7,9 @@ import { Section, Container } from '@components/global';
 const PROJECTS = [
   {
     name: 'Boost',
-    description: 'An exercise focused event making app',
+    description:
+      'An event making app, where it allows the user to easily keep in touch with their friends through exercise.',
+    image: '/images/projects/landing-page.png',
     link: 'https://boostapp.netlify.app',
     github: 'https://github.com/lucaxue/boost-app-front-end',
   },
@@ -17,37 +19,24 @@ const Projects: React.FC = () => (
   <Section id="projects" accent>
     <Container style={{ position: 'relative' }}>
       <Grid>
-        <h1>My Projects</h1>
-        <p>
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-          Some words again and again Some words again and again
-          <br />
-        </p>
+        <h1>Projects</h1>
+        {PROJECTS.map(({ name, description, image, link, github }) => (
+          <div key={name}>
+            <h2>{name}</h2>
+            <p>{description}</p>
+            <Preview>
+              <Image
+                src={image}
+                height="55%"
+                width="100%"
+                layout="responsive"
+                onClick={() => {
+                  window.open(link);
+                }}
+              />
+            </Preview>
+          </div>
+        ))}
       </Grid>
       <Art>
         <Image
@@ -55,6 +44,7 @@ const Projects: React.FC = () => (
           height="100%"
           width="100%"
           layout="responsive"
+          alt="build"
         />
       </Art>
       <ArtMobile>
@@ -63,6 +53,7 @@ const Projects: React.FC = () => (
           height="100%"
           width="100%"
           layout="responsive"
+          alt="build"
         />
       </ArtMobile>
     </Container>
@@ -71,6 +62,15 @@ const Projects: React.FC = () => (
 
 const Grid = styled.div`
   display: grid;
+  width: 60%;
+
+  h1 {
+    margin-bottom: 48px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
 `;
 
 const Art = styled.figure`
@@ -98,6 +98,14 @@ const ArtMobile = styled.figure`
 
   @media (max-width: ${(props) => props.theme.screen.md}) {
     display: block;
+  }
+`;
+
+const Preview = styled.figure`
+  width: 500px;
+  margin: 0;
+  &:hover {
+    cursor: pointer;
   }
 `;
 

@@ -7,7 +7,7 @@ import ExternalLink from '@common/ExternalLink';
 
 const About: React.FC = () => {
   return (
-    <Section id="about" style={{ paddingBottom: '0' }}>
+    <Section id="about">
       <Container>
         <Grid>
           <div>
@@ -30,6 +30,7 @@ const About: React.FC = () => {
               width="200px"
               height="200px"
               layout="responsive"
+              alt="Luca headshot"
             />
           </Art>
         </Grid>
