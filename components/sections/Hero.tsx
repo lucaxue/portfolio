@@ -6,7 +6,7 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 const Hero: React.FC = () => (
-  <HeroWrapper>
+  <HeroWrapper id="me">
     <Container>
       <Grid>
         <Art>

@@ -42,7 +42,9 @@ const NavBar: React.FC = ({ ...props }) => {
   return (
     <Nav {...props}>
       <StyledContainer>
-        <Brand>Luca Xue</Brand>
+        <Brand>
+          <AnchorLink href="#me">Luca Xue</AnchorLink>
+        </Brand>
         <Mobile>
           <button onClick={toggleMobileMenu} style={{ color: 'black' }}>
             <MenuIcon />
@@ -126,6 +128,11 @@ const MobileMenu = styled.div`
 const Brand = styled.div`
   font-family: ${(props) => props.theme.font.primary};
   ${(props) => props.theme.font_size.large};
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 const Mobile = styled.div<{ hide?: boolean }>`
