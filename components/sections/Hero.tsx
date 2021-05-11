@@ -29,7 +29,7 @@ const Hero: React.FC = () => (
           </h2>
           <br />
           <p>
-            <StyledExternalLink href="https://github.com/lucaxue">
+            <StyledExternalLink href="mailto:lxue02@gmail.com">
               Say hi! &nbsp;&#x2794;
             </StyledExternalLink>
           </p>

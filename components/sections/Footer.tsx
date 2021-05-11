@@ -28,6 +28,7 @@ const Footer: React.FC = () => (
     <StyledContainer>
       <Copyright>
         <h2>Luca Xue</h2>
+
         <span>
           Illustrations from
           {` `}
@@ -79,13 +80,6 @@ const Copyright = styled.div`
       font-weight: 600;
     }
   }
-`;
-
-const Art = styled.figure`
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-top: 48px;
 `;
 
 const StyledContainer = styled(Container)`
