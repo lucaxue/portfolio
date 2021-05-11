@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 import { Section, Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
 const PROJECTS = [
   {
@@ -11,7 +12,7 @@ const PROJECTS = [
       'An event making app, where it allows the user to easily keep in touch with their friends through exercise.',
     image: '/images/projects/landing-page.png',
     link: 'https://boostapp.netlify.app',
-    github: 'https://github.com/lucaxue/boost-app-front-end',
+    github: 'https://github.com/lucaxue/boost-app-frontend',
   },
 ];
 
@@ -22,7 +23,11 @@ const Projects: React.FC = () => (
         <h1>Projects</h1>
         {PROJECTS.map(({ name, description, image, link, github }) => (
           <div key={name}>
-            <h2>{name}</h2>
+            <h2>
+              <ExternalLink href={github}>
+                {name} <span id="arrow">&nbsp;&#x2794;</span>
+              </ExternalLink>
+            </h2>
             <p>{description}</p>
             <Preview>
               <Image
@@ -63,6 +68,11 @@ const Projects: React.FC = () => (
 const Grid = styled.div`
   display: grid;
   width: 60%;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   h1 {
     margin-bottom: 48px;
