@@ -2,13 +2,13 @@ import React from 'react';
 import Head from 'next/head';
 
 const SEO_DATA = {
-  description: 'My portfolio',
+  description: 'A software developer with a passion for learning and growth.',
   title: 'Luca Xue',
   url: '',
   author: 'Luca Xue',
-  keywords: ['luca', 'xue', 'portfolio'],
-  img: '',
-  twitterId: '',
+  keywords: ['luca', 'xue', 'portfolio', 'software', 'developer'],
+  img: '/images/portfolio_preview.png',
+  twitterId: '@luca_xue',
   facebookId: '',
 };
 
