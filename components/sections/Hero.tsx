@@ -13,8 +13,8 @@ const Hero: React.FC = () => (
           <div>
             <Image
               src="/images/art/lightbulb_man.png"
-              height="100%"
-              width="100%"
+              height="662"
+              width="662"
               layout="responsive"
               alt="lightbulb man"
             />

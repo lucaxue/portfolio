@@ -37,8 +37,8 @@ const About: React.FC = () => {
           <Art headshot>
             <Image
               src="/images/my_headshot.png"
-              width="200px"
-              height="200px"
+              width="200"
+              height="200"
               layout="responsive"
               alt="Luca headshot"
             />

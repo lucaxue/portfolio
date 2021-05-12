@@ -84,8 +84,8 @@ const Projects: React.FC = () => (
       <Art>
         <Image
           src="/images/art/build.png"
-          height="100%"
-          width="100%"
+          height="1000"
+          width="1000"
           layout="responsive"
           alt="build"
         />
@@ -93,8 +93,8 @@ const Projects: React.FC = () => (
       <ArtMobile>
         <Image
           src="/images/art/build.png"
-          height="100%"
-          width="100%"
+          height="508"
+          width="508"
           layout="responsive"
           alt="build"
         />

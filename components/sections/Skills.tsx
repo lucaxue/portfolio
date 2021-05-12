@@ -73,8 +73,8 @@ const Skills: React.FC = () => {
         <Art>
           <Image
             src="/images/art/learn_yourself.png"
-            width="100%"
-            height="100%"
+            width="1000"
+            height="1000"
             layout="responsive"
             alt="learn yourself"
           />
