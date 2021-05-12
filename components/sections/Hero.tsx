@@ -91,9 +91,10 @@ const Text = styled.div`
 const StyledExternalLink = styled(ExternalLink)`
   color: inherit;
   text-decoration: none;
-
+  transition: 0.2s;
   &:hover {
     color: ${(props) => props.theme.color.black.regular};
+    font-weight: 500;
   }
 `;
 
