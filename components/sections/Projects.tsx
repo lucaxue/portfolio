@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from 'next/image';
 
 import ExternalLink from '@common/ExternalLink';
+import Image from '@common/Image';
 import { Container, Section } from '@components/global';
 
 const PROJECTS = [
@@ -97,6 +97,7 @@ const Projects: React.FC = () => (
           width="508"
           layout="responsive"
           alt="build"
+          loading="lazy"
         />
       </ArtMobile>
     </Container>

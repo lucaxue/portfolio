@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from 'next/image';
 
 import { Container, Section } from '@components/global';
+import Image from '@common/Image';
 
 const Skills: React.FC = () => {
   return (
@@ -69,6 +69,7 @@ const Skills: React.FC = () => {
             height="1000"
             layout="responsive"
             alt="learn yourself"
+            loading="lazy"
           />
         </Art>
       </Container>

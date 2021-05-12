@@ -1,24 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from 'next/image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import Image from '@common/Image';
 
 const Hero: React.FC = () => (
   <HeroWrapper id="me">
     <Container>
       <Grid>
         <Art>
-          <div>
-            <Image
-              src="/images/art/lightbulb_man.png"
-              height="662"
-              width="662"
-              layout="responsive"
-              alt="lightbulb man"
-            />
-          </div>
+          <Image
+            src="/images/art/lightbulb_man.png"
+            height="662"
+            width="662"
+            layout="responsive"
+            alt="lightbulb man"
+          />
         </Art>
         <Text>
           <h1>Hi, I'm Luca.</h1>

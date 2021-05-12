@@ -1,7 +1,8 @@
-import SEO from '@common/SEO';
-import Document, { Head, Html, Main, NextScript } from 'next/document';
 import React from 'react';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+
+import SEO from '@common/SEO';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {

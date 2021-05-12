@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from 'next/image';
 
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import Image from '@common/Image';
 
 const About: React.FC = () => {
   return (
@@ -41,6 +41,7 @@ const About: React.FC = () => {
               height="200"
               layout="responsive"
               alt="Luca headshot"
+              loading="lazy"
             />
           </Art>
         </Grid>
