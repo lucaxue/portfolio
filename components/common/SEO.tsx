@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 
 const SEO_DATA = {
   description: 'A software developer with a passion for learning and growth.',
@@ -13,7 +12,7 @@ const SEO_DATA = {
 };
 
 const SEO: React.FC = () => (
-  <Head>
+  <>
     <meta property="fb:app_id" content={SEO_DATA.facebookId} />
     <meta property="og:title" content={SEO_DATA.title} />
     <meta property="og:type" content="website" />
@@ -34,7 +33,7 @@ const SEO: React.FC = () => (
     <meta name="author" content={SEO_DATA.author} />
     <title>{SEO_DATA.title}</title>
     <html lang="en" />
-  </Head>
+  </>
 );
 
 export default SEO;

@@ -22,51 +22,43 @@ const Skills: React.FC = () => {
           <SkillsGrid>
             <div>
               <h2>Languages</h2>
-              <p>
-                <ul>
-                  <ListItem>JavaScript</ListItem>
-                  <ListItem>TypeScript</ListItem>
-                  <ListItem>HTML</ListItem>
-                  <ListItem>CSS / SCSS</ListItem>
-                  <ListItem>C#</ListItem>
-                </ul>
-              </p>
+              <ul>
+                <ListItem>JavaScript</ListItem>
+                <ListItem>TypeScript</ListItem>
+                <ListItem>HTML</ListItem>
+                <ListItem>CSS / SCSS</ListItem>
+                <ListItem>C#</ListItem>
+              </ul>
             </div>
             <div>
               <h2>Frontend</h2>
-              <p>
-                <ul>
-                  <ListItem>React.js</ListItem>
-                  <ListItem>Next.js</ListItem>
-                  <ListItem>Jest</ListItem>
-                  <ListItem>Chakra UI</ListItem>
-                  <ListItem>Styled Components</ListItem>
-                </ul>
-              </p>
+              <ul>
+                <ListItem>React.js</ListItem>
+                <ListItem>Next.js</ListItem>
+                <ListItem>Jest</ListItem>
+                <ListItem>Chakra UI</ListItem>
+                <ListItem>Styled Components</ListItem>
+              </ul>
             </div>
             <div>
               <h2>Backend</h2>
-              <p>
-                <ul>
-                  <ListItem>ASP.NET Core</ListItem>
-                  <ListItem>xUnit</ListItem>
-                  <ListItem>NSubstitute / Moq</ListItem>
-                  <ListItem>FluentAssertions</ListItem>
-                  <ListItem>PostgreSQL</ListItem>
-                </ul>
-              </p>
+              <ul>
+                <ListItem>ASP.NET Core</ListItem>
+                <ListItem>xUnit</ListItem>
+                <ListItem>NSubstitute / Moq</ListItem>
+                <ListItem>FluentAssertions</ListItem>
+                <ListItem>PostgreSQL</ListItem>
+              </ul>
             </div>
             <div>
               <h2>Other</h2>
-              <p>
-                <ul>
-                  <ListItem>Git </ListItem>
-                  <ListItem>GitHub</ListItem>
-                  <ListItem>Postman</ListItem>
-                  <ListItem>SOLID</ListItem>
-                  <ListItem>TDD</ListItem>
-                </ul>
-              </p>
+              <ul>
+                <ListItem>Git </ListItem>
+                <ListItem>GitHub</ListItem>
+                <ListItem>Postman</ListItem>
+                <ListItem>SOLID</ListItem>
+                <ListItem>TDD</ListItem>
+              </ul>
             </div>
           </SkillsGrid>
         </Grid>
@@ -99,7 +91,7 @@ const Grid = styled.div`
     margin-bottom: 24px;
   }
 
-  p {
+  ul {
     margin-bottom: 48px;
   }
 `;
@@ -129,6 +121,10 @@ const Art = styled.div`
 const ListItem = styled.li`
   cursor: default;
   transition: 0.2s;
+
+  ${(props) => props.theme.font_size.regular};
+  color: ${(props) => props.theme.color.black.light};
+
   &:hover {
     color: ${(props) => props.theme.color.black.regular};
   }
