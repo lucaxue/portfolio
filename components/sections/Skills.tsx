@@ -130,6 +130,10 @@ const ListItem = styled.li`
   &:hover {
     color: ${(props) => props.theme.color.black.regular};
   }
+
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
+    ${(props) => props.theme.font_size.small};
+  }
 `;
 
 export default Skills;
