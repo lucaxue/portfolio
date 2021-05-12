@@ -24,11 +24,11 @@ const Skills: React.FC = () => {
               <h2>Languages</h2>
               <p>
                 <ul>
-                  <li>JavaScript</li>
-                  <li>TypeScript</li>
-                  <li>HTML</li>
-                  <li>CSS / SCSS</li>
-                  <li>C#</li>
+                  <ListItem>JavaScript</ListItem>
+                  <ListItem>TypeScript</ListItem>
+                  <ListItem>HTML</ListItem>
+                  <ListItem>CSS / SCSS</ListItem>
+                  <ListItem>C#</ListItem>
                 </ul>
               </p>
             </div>
@@ -36,11 +36,11 @@ const Skills: React.FC = () => {
               <h2>Frontend</h2>
               <p>
                 <ul>
-                  <li>React.js</li>
-                  <li>Next.js</li>
-                  <li>Jest</li>
-                  <li>Chakra UI</li>
-                  <li>Styled Components</li>
+                  <ListItem>React.js</ListItem>
+                  <ListItem>Next.js</ListItem>
+                  <ListItem>Jest</ListItem>
+                  <ListItem>Chakra UI</ListItem>
+                  <ListItem>Styled Components</ListItem>
                 </ul>
               </p>
             </div>
@@ -48,11 +48,11 @@ const Skills: React.FC = () => {
               <h2>Backend</h2>
               <p>
                 <ul>
-                  <li>ASP.NET Core</li>
-                  <li>xUnit</li>
-                  <li>NSubstitute / Moq</li>
-                  <li>FluentAssertions</li>
-                  <li>PostgreSQL</li>
+                  <ListItem>ASP.NET Core</ListItem>
+                  <ListItem>xUnit</ListItem>
+                  <ListItem>NSubstitute / Moq</ListItem>
+                  <ListItem>FluentAssertions</ListItem>
+                  <ListItem>PostgreSQL</ListItem>
                 </ul>
               </p>
             </div>
@@ -60,11 +60,11 @@ const Skills: React.FC = () => {
               <h2>Other</h2>
               <p>
                 <ul>
-                  <li>Git </li>
-                  <li>GitHub</li>
-                  <li>Postman</li>
-                  <li>SOLID</li>
-                  <li>TDD</li>
+                  <ListItem>Git </ListItem>
+                  <ListItem>GitHub</ListItem>
+                  <ListItem>Postman</ListItem>
+                  <ListItem>SOLID</ListItem>
+                  <ListItem>TDD</ListItem>
                 </ul>
               </p>
             </div>
@@ -128,6 +128,14 @@ const Art = styled.div`
 
 const StyledContainer = styled(Container)`
   position: relative;
+`;
+
+const ListItem = styled.li`
+  cursor: default;
+  transition: 0.2s;
+  &:hover {
+    color: ${(props) => props.theme.color.black.regular};
+  }
 `;
 
 export default Skills;

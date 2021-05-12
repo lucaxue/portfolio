@@ -111,7 +111,12 @@ const Grid = styled.div`
 
   a {
     text-decoration: none;
+    display: inline-block;
     color: inherit;
+    transition: 0.2s;
+    &:hover {
+      transform: translateX(5px);
+    }
   }
 
   @media (max-width: ${(props) => props.theme.screen.md}) {
@@ -148,12 +153,13 @@ const ArtMobile = styled.figure`
 `;
 
 const Technology = styled.p`
-  border: solid #211e26 1px;
+  border: solid #564f62 1px;
   border-radius: 2px;
   ${(props) => props.theme.font_size.xsmall};
   color: ${(props) => props.theme.color.black.regular};
   padding: 0 10px;
   margin: 0;
+  cursor: default;
 `;
 
 const TechWrapper = styled.div`
