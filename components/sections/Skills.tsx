@@ -92,7 +92,8 @@ const Grid = styled.div`
     margin-bottom: 24px;
   }
 
-  ul {
+  ul,
+  p {
     margin-bottom: 48px;
   }
 `;
