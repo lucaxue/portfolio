@@ -7,7 +7,7 @@ import ExternalLink from '@common/ExternalLink';
 
 const About: React.FC = () => {
   return (
-    <Section id="about">
+    <StyledSection id="about">
       <Container>
         <Grid>
           <div>
@@ -15,9 +15,19 @@ const About: React.FC = () => {
             <p>
               Hello, I'm <strong>Luca</strong>, a keen learner who loves all
               things tech. <br />I have recently graduated from the{' '}
-              <strong>School of Code</strong> and I am now starting my journey
-              as a <strong>Software Developer</strong> at{' '}
-              <strong>Suru Partners</strong>.
+              <strong>
+                <ExternalLink href="https://www.schoolofcode.co.uk/">
+                  School of Code
+                </ExternalLink>
+              </strong>{' '}
+              and I am now starting my journey as a{' '}
+              <strong>Software Developer</strong> at{' '}
+              <strong>
+                <ExternalLink href="http://surupartners.com/">
+                  Suru Partners
+                </ExternalLink>
+              </strong>
+              .
               <br />
               <br />
               Some technologies I have been recently working with include
@@ -34,49 +44,18 @@ const About: React.FC = () => {
             />
           </Art>
         </Grid>
-        {/* <Grid inverse>
-          <Art>
-            <Image
-              src="/images/art/learn_yourself.png"
-              width="100%"
-              height="100%"
-              layout="responsive"
-            />
-          </Art>
-          <div>
-            <h2>Learning never stops</h2>
-            <p>
-              From the bootcamp, I have learned some amazing things including
-              some cool technologies, good software practices, love of problem
-              solving, clear communication skills, ability to work in an agile
-              team and user centered development. <br />
-              <br />
-              However, the most valuable skill I've developed is learning how to
-              learn. This feeds my passion for continuous learning and tech.
-            </p>
-          </div>
-        </Grid> */}
       </Container>
-    </Section>
+    </StyledSection>
   );
 };
 
-const Grid = styled.div<{ inverse?: boolean }>`
+const Grid = styled.div`
   display: grid;
   grid-template-columns: 3fr 2fr;
   text-align: left;
   align-items: center;
   justify-items: center;
   margin: 105px;
-  margin-bottom: 0;
-
-  ${(props) =>
-    props.inverse &&
-    `
-    grid-gap: 100px;
-    text-align: left;
-    grid-template-columns: 2fr 3fr;
-  `}
 
   h2 {
     margin-bottom: 16px;
@@ -85,27 +64,18 @@ const Grid = styled.div<{ inverse?: boolean }>`
   a {
     text-decoration: none;
     color: inherit;
+    transition: 0.2s;
+    &:hover {
+      color: #2c2c2c;
+    }
   }
 
   @media (max-width: ${(props) => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     text-align: left;
-    margin-bottom: 76px;
 
     grid-gap: 64px;
     margin: 50px 0px;
-
-    &:last-child {
-      margin-bottom: 24px;
-    }
-
-    ${(props) =>
-      props.inverse &&
-      `
-        ${Art} {
-          order: 2;
-        }
-    `}
   }
 `;
 
@@ -113,6 +83,12 @@ const Art = styled.figure<{ headshot?: boolean }>`
   margin: 0;
   max-width: ${(props) => (props.headshot ? '200px' : '380px')};
   width: 100%;
+`;
+
+const StyledSection = styled(Section)`
+  @media (max-width: ${(props) => props.theme.screen.md}) {
+    padding-bottom: 0;
+  }
 `;
 
 export default About;
