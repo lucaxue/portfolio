@@ -3,7 +3,7 @@
 A single page portfolio website that shows off my interests, skills and projects,
 
 <a href='https://lucaxue.vercel.app' target="_blank">
-  <img src='https://lucaxue.vercel.app/images/portfolio_preview.png' alt='portfolio preview' />
+  <img src='https://lucaxue.vercel.app/images/portfolio_preview.png'rel="noreferrer noopener" alt='portfolio preview' />
 </a>
 <br/>
 <br/>
