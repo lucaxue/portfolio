@@ -4,10 +4,10 @@ import Head from 'next/head';
 const SEO_DATA = {
   description: 'A software developer with a passion for learning and growth.',
   title: 'Luca Xue',
-  url: '',
+  url: 'https://lucaxue.vercel.app/',
   author: 'Luca Xue',
   keywords: ['luca', 'xue', 'portfolio', 'software', 'developer'],
-  img: '/images/portfolio_preview.png',
+  img: 'https://lucaxue.vercel.app/images/portfolio_preview.png',
   twitterId: '@luca_xue',
   facebookId: '',
 };

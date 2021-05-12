@@ -7,7 +7,7 @@ import { Container, Section } from '@components/global';
 const Skills: React.FC = () => {
   return (
     <Section id="skills">
-      <StyledContainer>
+      <Container style={{ position: 'relative' }}>
         <Grid>
           <h1>Skills and Tools</h1>
           <p>
@@ -79,7 +79,7 @@ const Skills: React.FC = () => {
             alt="learn yourself"
           />
         </Art>
-      </StyledContainer>
+      </Container>
     </Section>
   );
 };
@@ -124,10 +124,6 @@ const Art = styled.div`
   @media (max-width: ${(props) => props.theme.screen.md}) {
     display: none;
   }
-`;
-
-const StyledContainer = styled(Container)`
-  position: relative;
 `;
 
 const ListItem = styled.li`

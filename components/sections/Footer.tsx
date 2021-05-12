@@ -5,8 +5,9 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 import GithubIcon from '@public/icons/github.svg';
-import InstagramIcon from '@public/icons/instagram.svg';
 import TwitterIcon from '@public/icons/twitter.svg';
+import LinkedInIcon from '@public/icons/linkedin.svg';
+import CodewarsIcon from '@public/icons/codewars.svg';
 
 const SOCIAL = [
   {
@@ -14,12 +15,16 @@ const SOCIAL = [
     link: 'https://github.com/lucaxue',
   },
   {
-    Icon: InstagramIcon,
-    link: '',
+    Icon: LinkedInIcon,
+    link: 'https://www.linkedin.com/in/luca-xue/',
   },
   {
     Icon: TwitterIcon,
     link: 'https://twitter.com/luca_xue',
+  },
+  {
+    Icon: CodewarsIcon,
+    link: 'https://www.codewars.com/users/lucaxue',
   },
 ];
 
