@@ -31,7 +31,7 @@ const About: React.FC = () => {
               <br />
               <br />
               Some technologies I have been recently working with include
-              TypeScript, React, Next, C#, ASP.NET Core and PostgreSQL.
+              PHP, Laravel, MySQL, Docker, TypeScript, React and Next.
             </p>
           </div>
           <Art headshot>
