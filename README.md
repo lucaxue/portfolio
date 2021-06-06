@@ -1,15 +1,17 @@
-# Luca Xue Portfolio Website
+<h1 align='center'>Portfolio Website </h1>
 
-A single page portfolio website that shows off my interests, skills and projects,
+<p align='center'>A single page portfolio website that tells you a little bit about my interests, skills and projects.</p>
 
-<a href='https://lucaxue.vercel.app' target="_blank">
-  <img src='https://lucaxue.vercel.app/images/portfolio_preview.png'rel="noreferrer noopener" alt='portfolio preview' />
+<div align='center'>
+
+![Next](https://img.shields.io/badge/Next.js-2e2e2e?logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-2e2e2e?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-2e2e2e?logo=typescript)
+![Styled Components](https://img.shields.io/badge/Styled%20Components-2e2e2e?logo=styled-components)
+![Vercel](https://img.shields.io/badge/Vercel-2e2e2e?logo=vercel)
+
+</div>
+
+<a href='https://lucaxue.vercel.app'>
+  <img src='https://lucaxue.vercel.app/images/portfolio_preview.png' alt='portfolio preview'/>
 </a>
-<br/>
-<br/>
-Made with:
-
-- React
-- TypeScript
-- Next.js (w/ SSG)
-- Styled Components
