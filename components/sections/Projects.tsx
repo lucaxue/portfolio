@@ -31,12 +31,12 @@ const PROJECTS = [
     description:
       'My personal portfolio page to display my interests, skills, and projects.',
     link: 'https://github.com/lucaxue/portfolio',
-    technologies: ['React', 'TypeScript', 'Next SSG', 'Styled Components'],
+    technologies: ['React', 'TypeScript', 'Next.js', 'Styled Components'],
   },
   {
     name: 'Bikes and Bond Dashboard',
     description:
-      'A full-stack James Bond style dashboard app, where you can get recommended a mission with the best bike to complete it.',
+      'A James Bond style dashboard app, where you can get recommended a mission with the best bike to complete it.',
     link: 'https://github.com/lucaxue/bikes-and-bond-dashboard',
     technologies: [
       'React',
@@ -50,15 +50,10 @@ const PROJECTS = [
     ],
   },
   {
-    name: 'Water Thyme',
-    description: 'A simple plant watering reminder app.',
-    link: 'https://github.com/lucaxue/water-thyme',
-    technologies: [
-      'React',
-      'TypeScript',
-      'Styled Components',
-      'Firebase Auth + Database',
-    ],
+    name: 'Tweety',
+    description: 'A simple Twitter clone.',
+    link: 'https://github.com/lucaxue/tweety',
+    technologies: ['Laravel', 'PHP', 'MySQL', 'Tailwind CSS'],
   },
 ];
 
@@ -130,7 +125,7 @@ const Art = styled.figure`
   margin: -80px 0;
   position: absolute;
   bottom: 0;
-  left: 60%;
+  left: 50%;
 
   @media (max-width: ${(props) => props.theme.screen.lg}) {
     top: 20%;
