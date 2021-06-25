@@ -17,47 +17,46 @@ const Skills: React.FC = () => {
             team and user centered development. <br />
             <br />
             However, the most valuable skill I've developed is learning how to
-            learn. This feeds my passion for continuous learning and growth.
+            learn. This feeds my passion for continuous improvement.
           </p>
           <SkillsGrid>
             <div>
               <h2>Languages</h2>
               <ul>
                 <ListItem>JavaScript</ListItem>
-                <ListItem>TypeScript</ListItem>
+                <ListItem>PHP</ListItem>
+                <ListItem>C#</ListItem>
                 <ListItem>HTML</ListItem>
                 <ListItem>CSS / SCSS</ListItem>
-                <ListItem>C#</ListItem>
               </ul>
             </div>
             <div>
-              <h2>Frontend</h2>
+              <h2>Frameworks</h2>
               <ul>
-                <ListItem>React.js</ListItem>
+                <ListItem>React</ListItem>
                 <ListItem>Next.js</ListItem>
-                <ListItem>Jest</ListItem>
-                <ListItem>Chakra UI</ListItem>
-                <ListItem>Styled Components</ListItem>
+                <ListItem>Laravel</ListItem>
+                <ListItem>ASP.NET Core</ListItem>
               </ul>
             </div>
             <div>
-              <h2>Backend</h2>
+              <h2>Tools</h2>
               <ul>
-                <ListItem>ASP.NET Core</ListItem>
+                <ListItem>Jest</ListItem>
+                <ListItem>PHPUnit</ListItem>
                 <ListItem>xUnit</ListItem>
-                <ListItem>NSubstitute / Moq</ListItem>
-                <ListItem>FluentAssertions</ListItem>
-                <ListItem>PostgreSQL</ListItem>
+                <ListItem>TailwindCSS</ListItem>
+                <ListItem>Styled Components</ListItem>
               </ul>
             </div>
             <div>
               <h2>Other</h2>
               <ul>
-                <ListItem>Git </ListItem>
+                <ListItem>Git</ListItem>
                 <ListItem>GitHub</ListItem>
-                <ListItem>Postman</ListItem>
-                <ListItem>SOLID</ListItem>
                 <ListItem>TDD</ListItem>
+                <ListItem>SOLID</ListItem>
+                <ListItem>Design Patterns</ListItem>
               </ul>
             </div>
           </SkillsGrid>
@@ -109,7 +108,7 @@ const Art = styled.div`
   margin: -80px 0;
   position: absolute;
   top: 0;
-  right: 67.5%;
+  right: 60%;
 
   @media (max-width: ${(props) => props.theme.screen.lg}) {
     top: 20%;
