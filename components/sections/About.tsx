@@ -14,7 +14,7 @@ const About: React.FC = () => {
             <h2>About me</h2>
             <p>
               Hello, I'm <strong>Luca</strong>, a keen learner who loves all
-              things tech. <br />I have recently graduated from the{' '}
+              things tech. I have recently graduated from the{' '}
               <strong>
                 <ExternalLink href="https://www.schoolofcode.co.uk/">
                   School of Code
@@ -30,15 +30,15 @@ const About: React.FC = () => {
               .
               <br />
               <br />
-              Some technologies I have been recently working with include
-              PHP, Laravel, MySQL, Docker, TypeScript, React and Next.
+              I value being able to grow and learn, so that I can continue to
+              contribute my best towards my work.
             </p>
           </div>
           <Art headshot>
             <Image
-              src="/images/my_headshot.png"
-              width="200"
-              height="200"
+              src="/images/my_headshot.jpeg"
+              width="400"
+              height="400"
               layout="responsive"
               alt="Luca headshot"
               loading="lazy"
@@ -52,6 +52,7 @@ const About: React.FC = () => {
 
 const Grid = styled.div`
   display: grid;
+  gap: 2rem;
   grid-template-columns: 3fr 2fr;
   text-align: left;
   align-items: center;
@@ -82,7 +83,11 @@ const Grid = styled.div`
 
 const Art = styled.figure<{ headshot?: boolean }>`
   margin: 0;
-  max-width: ${(props) => (props.headshot ? '200px' : '380px')};
+
+  @media (min-width: ${(props) => props.theme.screen.md}) {
+    margin-top: 3rem;
+  }
+  max-width: ${(props) => (props.headshot ? '300px' : '380px')};
   width: 100%;
 `;
 
